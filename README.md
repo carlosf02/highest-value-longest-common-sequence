@@ -24,11 +24,6 @@ python3 src/generate_tests.py
 ```
 This creates 10 test files in `data/` with string lengths ranging from 25 to 2000.
 
-### Run the benchmark
-```
-python3 src/benchmark.py
-```
-This runs the solver on all test files in `data/` and produces a runtime graph.
 
 ## Project Structure
 ```
@@ -65,7 +60,10 @@ B
 ```
 
 ## Question 1: Empirical Comparison
+![Runtime Graph](data/runtime_graph.png)
 
+The graph shows that runtime grows quadratically as string length increases,
+which is consistent with the O(m * n) time complexity of the DP algorithm.
 
 ## Question 2: Recurrence Equation
 
